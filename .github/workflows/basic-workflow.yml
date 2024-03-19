@@ -1,0 +1,16 @@
+name: Basic workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, releases/**]
+#    tags: [v2, v1.*]
+#  pull_request:
+#    branches: [main, releases/**]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "hello world"
