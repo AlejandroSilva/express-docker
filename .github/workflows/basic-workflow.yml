@@ -11,7 +11,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    environment: production-env
     env:
       DOCKER_REGISTRY: c8n.io
       DOCKER_IMAGE: alejandrosilva/express-docker
