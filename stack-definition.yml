@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    platform: linux/amd64
+    image: c8n.io/alejandrosilva/express-docker:${IMAGE_TAG}
+    container_name: webnode
+    ports:
+      - 3111:3000
